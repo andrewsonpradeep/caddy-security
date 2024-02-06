@@ -47,6 +47,7 @@ import (
 //     enable accept header
 //     enable js callback
 //     enable id_token cookie [<cookie_name>]
+//     enable refresh_token cookie [<cookie_name>]
 //     enable logout
 //     extract <field1> <fieldN> from userinfo
 //     extract all from userinfo
