@@ -18,8 +18,8 @@ import (
 	"github.com/caddyserver/caddy/v2"
 	"github.com/caddyserver/caddy/v2/caddyconfig/caddyfile"
 	"github.com/andrewsonpradeep/caddy-security/pkg/util"
-	"github.com/greenpau/go-authcrunch/pkg/authn"
-	"github.com/greenpau/go-authcrunch/pkg/authn/ui"
+	"github.com/andrewsonpradeep/go-authcrunch/pkg/authn"
+	"github.com/andrewsonpradeep/go-authcrunch/pkg/authn/ui"
 	"io/ioutil"
 	"strings"
 )

@@ -23,8 +23,8 @@ import (
 	"github.com/caddyserver/caddy/v2/caddyconfig/httpcaddyfile"
 	"github.com/caddyserver/caddy/v2/modules/caddyhttp"
 	"github.com/andrewsonpradeep/caddy-security/pkg/util"
-	"github.com/greenpau/go-authcrunch/pkg/authn"
-	"github.com/greenpau/go-authcrunch/pkg/requests"
+	"github.com/andrewsonpradeep/go-authcrunch/pkg/authn"
+	"github.com/andrewsonpradeep/go-authcrunch/pkg/requests"
 )
 
 const (
