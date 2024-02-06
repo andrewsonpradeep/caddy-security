@@ -169,6 +169,11 @@ func parseCaddyfileIdentityProvider(d *caddyfile.Dispenser, repl *caddy.Replacer
 				if !strings.HasSuffix(v, "id_token_cookie") {
 					m["identity_token_cookie_name"] = args[len(args)-1]
 				}
+			case strings.HasPrefix(v, "refresh_token_cookie"):
+				m["refresh_token_cookie_enabled"] = true
+				if !strings.HasSuffix(v, "refresh_token_cookie") {
+					m["refresh_token_cookie_name"] = args[len(args)-1]
+				}
 			default:
 				return errors.ErrMalformedDirectiveValue.WithArgs(rd, args, "unsupported value")
 			}
