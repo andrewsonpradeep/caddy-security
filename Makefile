@@ -16,7 +16,7 @@ all: info
 	@#	xcaddy build $(CADDY_VERSION) --output ../$(PLUGIN_NAME)/bin/caddy
 	@#	--with github.com/andrewsonpradeep/caddy-security=$(BUILD_DIR)
 	@#	--with github.com/greenpau/caddy-trace@latest
-	@#--with github.com/andrewsonpradeep/go-authcrunch@v1.0.40=/home/greenpau/dev/go/src/github.com/andrewsonpradeep/go-authcrunch
+	@#--with github.com/andrewsonpradeep/go-authcrunch@v1.0.47=/home/greenpau/dev/go/src/github.com/andrewsonpradeep/go-authcrunch
 	@go build -v -o ./bin/authp cmd/authp/main.go
 	@./bin/authp version
 	@#bin/caddy run -config assets/config/Caddyfile
