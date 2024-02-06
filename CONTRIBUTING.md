@@ -78,7 +78,7 @@ Then, modify `Makefile` such that that replacement passes to `xcaddy` builder:
 ```bash
         @mkdir -p ../xcaddy-$(PLUGIN_NAME) && cd ../xcaddy-$(PLUGIN_NAME) && \
                 xcaddy build $(CADDY_VERSION) --output ../$(PLUGIN_NAME)/bin/caddy \
-                --with github.com/andrewsonpradeep/caddy-security@$(LATEST_GIT_COMMIT)=$(BUILD_DIR) \
+                --with github.com/andrewsonpradeep/caddy-security=$(BUILD_DIR) \
                 --with github.com/greenpau/go-authcrunch@v1.0.40=/home/greenpau/dev/go/src/github.com/greenpau/go-authcrunch
 ```
 
