@@ -157,7 +157,7 @@ func parseCaddyfileIdentityProvider(d *caddyfile.Dispenser, repl *caddy.Replacer
 			case "tls_verification":
 				m["tls_insecure_skip_verify"] = true
 			default:
-				return errors.ErrMalformedDirectiveValue.WithArgs(rd, args, "unsupported value")
+				return errors.ErrMalformedDirectiveValue.WithArgs(rd, args, "unsupported value 34343")
 			}
 		case "enable":
 			// OAuth only.
@@ -186,7 +186,7 @@ func parseCaddyfileIdentityProvider(d *caddyfile.Dispenser, repl *caddy.Replacer
 			case strings.HasSuffix(strings.Join(args, " "), "from userinfo"):
 				m["user_info_fields"] = args[:len(args)-2]
 			default:
-				return errors.ErrMalformedDirectiveValue.WithArgs(rd, args, "unsupported value")
+				return errors.ErrMalformedDirectiveValue.WithArgs(rd, args, "unsupported value asdsadasdas")
 			}
 		case "required_token_fields":
 			// OAuth only.
