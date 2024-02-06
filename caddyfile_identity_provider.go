@@ -102,7 +102,7 @@ func parseCaddyfileIdentityProvider(d *caddyfile.Dispenser, repl *caddy.Replacer
 		case "realm", "driver", "tenant_id",
 			// OAuth
 			"domain_name", "client_id", "client_secret", "server_id", "base_auth_url",
-			"metadata_url", "identity_token_name", "authorization_url", "token_url",
+			"metadata_url", "identity_token_name","refresh_token_name", "authorization_url", "token_url",
 			"region", "user_pool_id", "user_info_roles_field_name",
 			// SAML
 			"idp_metadata_location", "idp_sign_cert_location", "idp_login_url",
@@ -176,7 +176,7 @@ func parseCaddyfileIdentityProvider(d *caddyfile.Dispenser, repl *caddy.Replacer
 					m["refresh_token_cookie_name"] = args[len(args)-1]
 				}
 			default:
-				return errors.ErrMalformedDirectiveValue.WithArgs(rd, args, "unsupported value")
+				return errors.ErrMalformedDirectiveValue.WithArgs(rd, args, "unsupported value pradeep")
 			}
 		case "extract":
 			if len(args) < 3 {
